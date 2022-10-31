@@ -1,40 +1,44 @@
-﻿using pokemonApp.@class;
+﻿using System.Xml.Linq;
+using pokemonApp.@class;
 
 namespace pokemonApp
 {
     public class Bulbizarre : Pokemon
     {
-        public Bulbizarre(string? name, int pv, int atk, int def, int vit) : base(name, pv, atk, def, vit)
+        public Bulbizarre()
         {
-            Name = "Bulbizarre";
+            Name = "Bulbizarre trop bizzaree";
             Pv = 45;
             Atk = 49;
             Def = 49;
             Vit = 45;
         }
-        
+       
     }
     public class Salameche : Pokemon
     {
-        public Salameche(string? name, int pv, int atk, int def, int vit) : base(name, pv, atk, def, vit)
+        public Salameche()
         {
-            Name = "Salamèche";
+            Name = "SalamècheDuTigre";
             Pv = 39;
             Atk = 52;
             Def = 43;
             Vit = 65;
         }
+        
     }
     public class Carapuce : Pokemon
     {
-        public Carapuce(string? name, int pv, int atk, int def, int vit) : base(name, pv, atk, def, vit)
+        public Carapuce()
         {
-            Name = "Carapuce";
+            Name = "Carapute";
             Pv = 44;
             Atk = 48;
             Def = 65;
             Vit = 43;
         }
+        
+
     }
 }
 

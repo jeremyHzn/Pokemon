@@ -1,8 +1,20 @@
-﻿// See https://aka.ms/new-console-template for more information
-using pokemonApp.@class;
+﻿using pokemonApp;
 
-Console.WriteLine("Hello, World!");
+Console.WriteLine("choisi : Salameche, bulbizzare, carrapuce :");
+switch (Console.ReadLine())
+{
+	case "Salameche":
+		var salameche = new Salameche();
+        Console.WriteLine($"tu as choisi {salameche.Name}");
+        break;
 
+    case "Bulbizzare":
+        var bulbizarre = new Bulbizarre();
+        Console.WriteLine($"tu as choisi {bulbizarre.Name}");
+        break;
 
-var pokemon1 = new Pokemon("jer", 12, 16, 5, 2);
-Console.WriteLine(pokemon1.Name);
+    case "Carrapuce":
+        var carapuce = new Carapuce();
+        Console.WriteLine($"tu as choisi {carapuce.Name}");
+        break;
+}
