@@ -18,3 +18,17 @@ switch (Console.ReadLine())
         Console.WriteLine($"tu as choisi {carapuce.Name}");
         break;
 }
+
+bool continuer = true;
+
+while (continuer)
+{
+
+
+    Console.WriteLine("souhaitez-vous continuer ? (Y/n)");
+    string choix = Console.ReadLine();
+    if (choix == "n")
+    {
+        continuer = false;
+    }
+}

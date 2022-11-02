@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace pokemonApp.@class
 {
 
-    public class Pokemon
+    public abstract class Pokemon
     {
         public string? Name { get; set; }
         public int Pv { get; set; }
