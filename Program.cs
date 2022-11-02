@@ -27,8 +27,5 @@ while (continuer)
 
     Console.WriteLine("souhaitez-vous continuer ? (Y/n)");
     string choix = Console.ReadLine();
-    if (choix == "n")
-    {
-        continuer = false;
-    }
+    continuer = (choix == "n") ? false : true;
 }
