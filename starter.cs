@@ -1,5 +1,4 @@
 ﻿using System.Xml.Linq;
-using pokemonApp.@class;
 
 namespace pokemonApp
 {
@@ -25,7 +24,8 @@ namespace pokemonApp
             Def = 43;
             Vit = 65;
         }
-        
+
+       
     }
     public class Carapuce : Pokemon
     {
