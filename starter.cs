@@ -25,7 +25,6 @@ namespace pokemonApp
             Vit = 65;
         }
 
-       
     }
     public class Carapuce : Pokemon
     {
@@ -41,4 +40,3 @@ namespace pokemonApp
 
     }
 }
-
