@@ -97,10 +97,10 @@ namespace pokemonApp
                 {
                     
                     Console.WriteLine("L'adversaire à réussi à fuir !");
-                    Console.WriteLine("souhaitez-vous continuer ? (Y/n)");
+                    Console.WriteLine("souhaitez-vous quitter ? (Y/n)");
                     bool continuer = true;
                     string choix = Console.ReadLine();
-                    continuer = choix != "quitter";
+                    continuer = choix != "y";
                 }
             }
             return "";

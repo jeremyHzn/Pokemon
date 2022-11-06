@@ -45,7 +45,5 @@ while (continuer)
             }
         }
     }
-    Console.WriteLine("souhaitez-vous continuer ? (Y/n)");
-    string choix = Console.ReadLine();
-    continuer = choix != "quitter";
 }
+
