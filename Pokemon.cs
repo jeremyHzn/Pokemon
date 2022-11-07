@@ -19,19 +19,11 @@ namespace pokemonApp
 
         public Pokemon() { }
 
-
         /*
          * Methode pour attaquer le pokemon et qu'il nous attaque
          */
         public virtual void Attack(Pokemon pokemon, Pokemon sauvage)
         {
-
-            switch (pokemon)
-            {
-                case: ""
-                default:
-            }
-
 
             Console.WriteLine($"vous attaquez {sauvage.Name} !");
             Console.WriteLine($"vous infligez {pokemon.Atk /8} PV à {sauvage.Name}!");
@@ -69,7 +61,7 @@ namespace pokemonApp
             switch (Console.ReadLine())
             {
                 case "y":
-                    Environment.Exit(0);
+                    Console.Clear();
                     break;
                 default:
                     
@@ -97,6 +89,9 @@ namespace pokemonApp
                     break;
                 case "4":
                     Quitter();
+                    break;
+                case "5":
+                    CapturePokemon();
                     break;
             }
             return "";
@@ -134,5 +129,20 @@ namespace pokemonApp
             
             return "";
         }
+
+        public void CapturePokemon()
+        {
+            Console.WriteLine("Vous capturez le pokémon sauvage");
+
+            List<string> pokemon = new List<string>(5);
+            pokemon.Add("bulbizzare");
+
+
+
+
+            Console.WriteLine("Vous avez capturé bulbizzare");
+            Console.WriteLine(pokemon);
+        }
     }
+
 }
