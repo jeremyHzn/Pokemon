@@ -18,6 +18,8 @@ while (continuer)
     
             while (salameche.Pv > 0)
                 {
+
+                   
                     Console.WriteLine(salameche.ActionChoice(salameche, sauvage));
                     Console.WriteLine(sauvage.ActionChoiceSauvage(sauvage, salameche));
                 }
@@ -45,5 +47,8 @@ while (continuer)
             }
         }
     }
+    Console.WriteLine("souhaitez-vous quitter ? (Y/n)");
+    string choix = Console.ReadLine();
+    continuer = choix != "y";
 }
 
