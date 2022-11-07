@@ -74,7 +74,7 @@ namespace pokemonApp
          */
         public string ActionChoice(Pokemon pokemon, Pokemon sauvage)
         {
-            Console.WriteLine("Choisissez une action à réaliser : 1 - Attaquer, 2 - healer, 3 - stats 4- quitter");
+            Console.WriteLine("Choisissez une action à réaliser : 1 - Attaquer, 2 - healer, 3 - stats 4- quitter, 5 - capturer");
             var choixAction = Console.ReadLine();
             switch (choixAction)
             {
@@ -134,14 +134,15 @@ namespace pokemonApp
         {
             Console.WriteLine("Vous capturez le pokémon sauvage");
 
-            List<string> pokemon = new List<string>(5);
+            List<string> pokemon = new List<string>();
+      
             pokemon.Add("bulbizzare");
 
-
-
-
             Console.WriteLine("Vous avez capturé bulbizzare");
-            Console.WriteLine(pokemon);
+            foreach (var item in pokemon)
+            {
+                Console.WriteLine($"t'es pokemon : {item}");
+            }
         }
     }
 

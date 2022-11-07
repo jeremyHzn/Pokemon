@@ -14,6 +14,7 @@ while (continuer)
         if (starterChoice == "1")
         {
             Salameche salameche = new Salameche();
+
             Console.WriteLine($"tu as choisi {salameche.Name}");
     
             while (salameche.Pv > 0)
